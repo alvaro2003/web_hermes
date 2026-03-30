@@ -3,8 +3,6 @@ import { createRoot } from 'react-dom/client';
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
-// ─── Utilities ───────────────────────────────────────────────────────────────
-
 function formatDate(dateStr) {
   if (!dateStr) return '—';
   const [y, m, d] = dateStr.split('-');
@@ -17,8 +15,6 @@ function daysUntilExpiry(dateStr) {
   const expiry = new Date(dateStr + 'T00:00:00');
   return Math.ceil((expiry - today) / (1000 * 60 * 60 * 24));
 }
-
-// ─── Header ──────────────────────────────────────────────────────────────────
 
 function Header({ page, setPage }) {
   return (
@@ -43,8 +39,6 @@ function Header({ page, setPage }) {
     </header>
   );
 }
-
-// ─── Product Card ─────────────────────────────────────────────────────────────
 
 function ProductCard({ produto }) {
   const days = daysUntilExpiry(produto.data_validade);
@@ -81,15 +75,13 @@ function ProductCard({ produto }) {
   );
 }
 
-// ─── Estoque Page ─────────────────────────────────────────────────────────────
-
 function EstoquePage({ produtos, loading, online }) {
   return (
     <main className="page">
       <h1 className="page-title">
         Visão de <span>Anúncios</span>
       </h1>
-      <p className="page-subtitle">> tudo que você pode querer.</p>
+      <p className="page-subtitle">- tudo que você pode querer.</p>
 
       <div className="status-bar">
         <div className={`status-dot ${online ? '' : 'offline'}`} />
@@ -123,8 +115,6 @@ function EstoquePage({ produtos, loading, online }) {
     </main>
   );
 }
-
-// ─── Gerenciar Page ───────────────────────────────────────────────────────────
 
 function GerenciarPage({ onRefresh }) {
   const today = new Date().toISOString().split('T')[0];
@@ -265,8 +255,6 @@ function GerenciarPage({ onRefresh }) {
   );
 }
 
-// ─── App Root ─────────────────────────────────────────────────────────────────
-
 function App() {
   const [page, setPage] = useState('estoque');
   const [produtos, setProdutos] = useState([]);
@@ -303,8 +291,6 @@ function App() {
     </>
   );
 }
-
-// ─── Mount ────────────────────────────────────────────────────────────────────
 
 const root = createRoot(document.getElementById('root'));
 root.render(<App />);
