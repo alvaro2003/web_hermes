@@ -228,7 +228,7 @@ function GerenciarPage({ onRefresh }) {
             </div>
             <div className="field">
               <label>Localização</label>
-              <input name="localizacao" value={addForm.localizacao} onChange={handleAddChange} placeholder="Ex: Prateleira A3" />
+              <input name="localizacao" value={addForm.localizacao} onChange={handleAddChange} placeholder="Ex: São Paulo" />
             </div>
             {addStatus && (
               <div className={`feedback ${addStatus.type}`}>{addStatus.msg}</div>
