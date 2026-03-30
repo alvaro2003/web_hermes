@@ -81,7 +81,7 @@ function EstoquePage({ produtos, loading, online }) {
       <h1 className="page-title">
         Visão de <span>Anúncios</span>
       </h1>
-      <p className="page-subtitle">- tudo que você pode querer.</p>
+      <p className="page-subtitle">-tudo que você pode querer.</p>
 
       <div className="status-bar">
         <div className={`status-dot ${online ? '' : 'offline'}`} />
