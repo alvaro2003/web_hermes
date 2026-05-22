@@ -20,7 +20,7 @@ function Header({ page, setPage }) {
   return (
     <header className="header">
       <div className="header__logo">
-        <img src="/logo.png" alt="Hermes B2B" style={{ height: '40px' }} />
+        <img src="/logo.png" alt="Hermes B2B" style={{ height: '65px' }} />
       </div>
       <nav className="header__nav">
         <button
