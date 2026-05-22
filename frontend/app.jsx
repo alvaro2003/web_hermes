@@ -20,7 +20,7 @@ function Header({ page, setPage }) {
   return (
     <header className="header">
       <div className="header__logo">
-        <span>Hermes </span>B2B
+        <img src="/logo.png" alt="Hermes B2B" style={{ height: '40px' }} />
       </div>
       <nav className="header__nav">
         <button
@@ -71,6 +71,9 @@ function ProductCard({ produto }) {
           <span className="product-card__value">{produto.localizacao}</span>
         </div>
       </div>
+      <div style={{ textAlign: 'center', padding: '8px 0', fontSize: '1rem' }}>
+        ⭐⭐⭐⭐⭐
+      </div>
     </article>
   );
 }
@@ -78,9 +81,7 @@ function ProductCard({ produto }) {
 function EstoquePage({ produtos, loading, online }) {
   return (
     <main className="page">
-      <h1 className="page-title">
-        Visão de <span>Anúncios</span>
-      </h1>
+      <p className="page-title">Conecte-se com fornecedores diretos de alimentos frescos e de alta qualidade.</p>
       <p className="page-subtitle">-tudo que você pode querer.</p>
 
       <div className="status-bar">
