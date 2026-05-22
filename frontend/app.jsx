@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { createRoot } from 'react-dom/client';
+import logo from './logo.png'
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
@@ -20,7 +21,7 @@ function Header({ page, setPage }) {
   return (
     <header className="header">
       <div className="header__logo">
-         <img src="/icon.png" alt="Logo" className="logo" />
+         <img src={logo} alt="Logo" className="logo" />
       </div>
       <nav className="header__nav">
         <button
