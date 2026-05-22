@@ -20,7 +20,7 @@ function Header({ page, setPage }) {
   return (
     <header className="header">
       <div className="header__logo">
-        <span>Hermes </span>B2B
+         <img src="/logo.png" alt="Logo" className="logo" />
       </div>
       <nav className="header__nav">
         <button
@@ -79,7 +79,7 @@ function EstoquePage({ produtos, loading, online }) {
   return (
     <main className="page">
       <h1 className="page-title">
-        Visão de <span>Anúncios</span>
+        Conecte-se com fornecedores <br>diretos de alimentos frescos </br>e de alta qualidade.
       </h1>
       <p className="page-subtitle">-tudo que você pode querer.</p>
 
