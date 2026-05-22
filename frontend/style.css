@@ -5,13 +5,13 @@
 }
 
 :root {
-  --bg:        #8BC34A;
-  --surface:   #0C6668;
+  --bg:       #074f50;
+  --surface:   #8BC34A;
   --surface2:  #1f1f1f;
-  --border:    #2a2a2a;
+  --border:    #0c0c0c;
   --accent:    #62ffcb;
   --accent2:   #7a93ff;
-  --text:      #f0f0f0;
+  --text:      #002a2b;
   --muted:     #666;
   --danger:    #ff3b3b;
   --success:   #00e676;
