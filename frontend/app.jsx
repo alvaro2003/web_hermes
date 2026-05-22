@@ -20,7 +20,7 @@ function Header({ page, setPage }) {
   return (
     <header className="header">
       <div className="header__logo">
-         <img src="/logo.png" alt="Logo" className="logo" />
+         <img src="/icon.png" alt="Logo" className="logo" />
       </div>
       <nav className="header__nav">
         <button
