@@ -79,7 +79,7 @@ function EstoquePage({ produtos, loading, online }) {
   return (
     <main className="page">
       <h1 className="page-title">
-        Conecte-se com fornecedores <br>diretos de alimentos frescos </br>e de alta qualidade.
+        Visão de <span>Anúncios</span>
       </h1>
       <p className="page-subtitle">-tudo que você pode querer.</p>
 
